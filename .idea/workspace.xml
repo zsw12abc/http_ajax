@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80ba018b-d61a-41fe-a4c3-4969155b6605" name="Default" comment="ran">
+    <list default="true" id="80ba018b-d61a-41fe-a4c3-4969155b6605" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" afterPath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Post/Post.js" afterPath="$PROJECT_DIR$/src/components/Post/Post.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/Blog/Blog.js" afterPath="$PROJECT_DIR$/src/containers/Blog/Blog.js" />
     </list>
@@ -31,8 +32,8 @@
       <file leaf-file-name="Blog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Blog/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+            <state relative-caret-position="426">
+              <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -40,12 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Post/Post.css">
+      <file leaf-file-name="FullPost.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/FullPost/FullPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +56,8 @@
       <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Post/Post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="75">
+              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -73,6 +76,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/Post/Post.css" />
         <option value="$PROJECT_DIR$/src/components/Post/Post.js" />
+        <option value="$PROJECT_DIR$/src/components/FullPost/FullPost.js" />
         <option value="$PROJECT_DIR$/src/containers/Blog/Blog.js" />
       </list>
     </option>
@@ -159,6 +163,13 @@
               <item name="http_ajax" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FullPost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="http_ajax" type="b2602c69:ProjectViewProjectNode" />
+              <item name="http_ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Post" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,7 +225,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511998896058</updated>
       <workItem from="1511998900091" duration="202000" />
-      <workItem from="1511999142403" duration="1127000" />
+      <workItem from="1511999142403" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="npm install axios for httprequest">
       <created>1511999011791</created>
@@ -237,11 +248,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511999877690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="transform the data and add information into data">
+      <created>1512000691097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512000691097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1329000" />
+    <option name="totallyTimeSpent" value="1856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -278,7 +296,8 @@
     <MESSAGE value="npm install axios for httprequest" />
     <MESSAGE value="fetch data from jsonplaceholder and use then to get the data" />
     <MESSAGE value="display the data fetched" />
-    <option name="LAST_COMMIT_MESSAGE" value="display the data fetched" />
+    <MESSAGE value="transform the data and add information into data" />
+    <option name="LAST_COMMIT_MESSAGE" value="transform the data and add information into data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -301,16 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Post/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Post/Post.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -319,10 +328,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Post/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FullPost/FullPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Blog/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="426">
+          <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
