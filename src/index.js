@@ -6,6 +6,13 @@ import registerServiceWorker from './registerServiceWorker';
 import axios from 'axios';
 
 //global access configuration
+//add based URL for all the httprequest url
+axios.defaults.baseURL = "https://jsonplaceholder.typicode.com/";
+axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
+axios.defaults.headers.post['Content-Type'] = 'application/json';//default
+
+
+//global interceptors
 axios.interceptors.request.use(request => {
     console.log(request);
     //edit request config globally
