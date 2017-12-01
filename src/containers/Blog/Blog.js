@@ -6,6 +6,9 @@ import {Route, NavLink, Switch, Redirect} from 'react-router-dom';
 import './Blog.css';
 
 class Blog extends Component {
+    state ={
+        auth: false,
+    };
     render() {
 
         return (
@@ -33,7 +36,7 @@ class Blog extends Component {
                 {/*<Route path="/" render={() => <h1>home2</h1>}/>*/}
                 {/*Using Switch to only render the first find link*/}
                 <Switch>
-                    <Route path="/new-post" component={NewPost}/>
+                    {this.state.false ? <Route path="/new-post" component={NewPost}/> : null};
                     <Route path="/posts" component={Posts}/>
                     <Redirect from='/' to='/posts'/>//direct from '/' to '/posts'
                 </Switch>

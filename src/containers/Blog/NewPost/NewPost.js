@@ -14,6 +14,7 @@ class NewPost extends Component {
 
 
     componentDidMount() {
+        //If unauth : this.props.history.replace('/posts');
         console.log(this.props);
     }
 
@@ -26,7 +27,9 @@ class NewPost extends Component {
         };
         axios.post('posts', data).then(response => {
                 console.log(response);
-                this.setState({submitted: true});
+                this.props.history.push('/posts');//go to the history posts page to redirect
+                // this.props.history.replace('/posts');//replace the previous page.
+                // this.setState({submitted: true});
             }
         );
     };
