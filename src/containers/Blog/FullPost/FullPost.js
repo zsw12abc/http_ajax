@@ -10,9 +10,19 @@ class FullPost extends Component {
 
     componentDidMount() {
         // console.log(this.props)
+        this.loadData();
+    }
+
+
+    componentDidUpdate(prevProps, prevState) {
+        this.loadData();
+    }
+
+    loadData() {
         if (this.props.match.params.id) {
             //prevent infinity request fetching
-            if (!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.id)) {
+            // just check the var not the type, this.state.loadedPost.id is a NUM | this.props.match.params.id is a STRING
+            if (!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id != this.props.match.params.id)) {
                 axios.get('posts/' + this.props.match.params.id).then(response => {
                     // console.log(response);
                     this.setState({loadedPost: response.data})
@@ -21,8 +31,9 @@ class FullPost extends Component {
         }
     }
 
+
     deletePostHandler = () => {
-        axios.delete('posts/' + this.props.id).then(
+        axios.delete('posts/' + this.props.match.params.id).then(
             response => {
                 console.log(response);
             }
@@ -31,7 +42,7 @@ class FullPost extends Component {
 
     render() {
         let post = <p style={{textAlign: 'center'}}>Please select a Post!</p>;
-        if (this.props.id) {
+        if (this.props.match.params.id) {
             post = <p style={{textAlign: 'center'}}>Loading...</p>;
         }
         if (this.state.loadedPost) {
