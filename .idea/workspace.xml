@@ -4,7 +4,6 @@
     <list default="true" id="80ba018b-d61a-41fe-a4c3-4969155b6605" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/containers/Blog/Blog.js" afterPath="$PROJECT_DIR$/src/containers/Blog/Blog.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js" afterPath="$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Blog/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="460">
+              <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -79,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewPost.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewPost.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -123,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/components/Post/Post.js" />
         <option value="$PROJECT_DIR$/src/containers/Blog/Posts/Posts.js" />
         <option value="$PROJECT_DIR$/src/containers/Blog/FullPost/FullPost.js" />
-        <option value="$PROJECT_DIR$/src/containers/Blog/Blog.js" />
         <option value="$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js" />
+        <option value="$PROJECT_DIR$/src/containers/Blog/Blog.js" />
       </list>
     </option>
   </component>
@@ -302,7 +301,7 @@
       <workItem from="1512019524658" duration="8961000" />
       <workItem from="1512083753695" duration="49000" />
       <workItem from="1512083821638" duration="65000" />
-      <workItem from="1512083904916" duration="6748000" />
+      <workItem from="1512083904916" duration="7140000" />
     </task>
     <task id="LOCAL-00001" summary="npm install axios for httprequest">
       <created>1511999011791</created>
@@ -479,11 +478,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512096477186</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add Route Guards to prevent unauth user go to some pages">
+      <created>1512098271180</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1512098271180</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21290000" />
+    <option name="totallyTimeSpent" value="21682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -542,7 +548,8 @@
     <MESSAGE value="fixed the full posts update" />
     <MESSAGE value="add redirect" />
     <MESSAGE value="redirect after post a new post" />
-    <option name="LAST_COMMIT_MESSAGE" value="redirect after post a new post" />
+    <MESSAGE value="add Route Guards to prevent unauth user go to some pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Route Guards to prevent unauth user go to some pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -958,21 +965,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Blog/Blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Blog/NewPost/NewPost.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Blog/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

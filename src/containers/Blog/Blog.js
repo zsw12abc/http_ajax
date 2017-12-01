@@ -6,9 +6,10 @@ import {Route, NavLink, Switch, Redirect} from 'react-router-dom';
 import './Blog.css';
 
 class Blog extends Component {
-    state ={
+    state = {
         auth: false,
     };
+
     render() {
 
         return (
@@ -37,8 +38,10 @@ class Blog extends Component {
                 {/*Using Switch to only render the first find link*/}
                 <Switch>
                     {this.state.false ? <Route path="/new-post" component={NewPost}/> : null};
-                    <Route path="/posts" component={Posts}/>
-                    <Redirect from='/' to='/posts'/>//direct from '/' to '/posts'
+                    <Route path="/posts" component={Posts}/>;
+                    {/*<Redirect from='/' to='/posts'/>;*/} {/*//direct from '/' to '/posts'*/}
+                    <Route render={() => <h1>Not found 404</h1>}/>
+                    {/*//404 page, unknown url, always last, wont work with Redirect*/}
                 </Switch>
             </div>
         );
