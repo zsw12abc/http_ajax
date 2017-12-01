@@ -13,7 +13,7 @@ class Blog extends Component {
                 <header>
                     <nav>
                         <ul>
-                            <li><NavLink
+                            <li><NavLink //dont need to refer the page, just render the component on the page
                                 to='/'
                                 exact
                                 activeClassName='my-active' //change class name
@@ -22,7 +22,7 @@ class Blog extends Component {
                                     textDecoration: 'underline'
                                 }}>Home</NavLink></li>
                             <li><NavLink to={{
-                                pathname: '/new-post',
+                                pathname: '/new-post',//where we going when we click the link
                                 hash: '#submit',
                                 search: '?quick-submit=ture'
                             }}>New Post</NavLink></li>
